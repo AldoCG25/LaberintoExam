@@ -19,8 +19,6 @@
 ## Sobre el examen
 This is a pick and place implementation for the Open Manipulator X robot using Ubutntu 20.04, ROS Noetic and the keyboard teleoperation tutorial as the foundation.
 
-Diseño de Sistemas Robóticos
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
