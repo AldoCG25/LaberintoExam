@@ -42,7 +42,7 @@ https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
 cd <catkin_ws>
 cd <src>
 ```
-6. Dentro de este mismo se hace la busqueda de la URL del paquete de GitHub (por lo general se encuentra en la pestaña "Code" del repositorio), se ejecutará el siguiente comando 'git clone <URL>'
+6. Dentro de la dirección src se clona el Github con el URL del paquete (por lo general se encuentra en la pestaña "Code" del repositorio), para ello, se ejecuta el comando 'git clone <URL>'
 ```sh
 git clone https://github.com/rfzeg/plywood_mazes.git
 ```
