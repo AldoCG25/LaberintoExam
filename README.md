@@ -17,7 +17,7 @@
 
 
 ## Sobre el examen
-En este proyecto, se utilizará el Turtlebot3 Burger para resolver un laberinto previamente almacenado en el repositorio de donde se obtuvo el mapa. Para lograr este objetivo, se ha desarrollado un código que permite guiar al robot hacia un punto específico en el mapa. En este caso, resolver el laberinto y que el robot termine en la esquina superior derecha.
+En este proyecto, se utilizará el Turtlebot3 Burger para resolver un laberinto del repositorio https://github.com/rfzeg/plywood_mazes.git. Para lograr este objetivo, se ha desarrollado un código que permite guiar al robot hacia un punto específico en el mapa. En este caso, resolver el laberinto y que el robot termine en la esquina superior derecha.
 
 ### Requisitos
 Para llevar a cabo la práctica de manera efectiva, se recomienda contar con la versión de Ubuntu 20.04 instalada en una máquina virtual o en una partición del disco duro de su dispositivo. Esto permitirá una mayor estabilidad y compatibilidad con las herramientas utilizadas durante la práctica.
