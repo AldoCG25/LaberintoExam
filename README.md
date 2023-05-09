@@ -21,7 +21,7 @@ A continuación se explicará con mayor detalle el archivo examen2.py :
 <h3 align="center">Laberinto Examen</h3>
 
   <p align="center">
-    Pick and place implementation for the Open Manipulator X robot
+    Resolución del Laberinto Maze 3 6x6 con TurtleBot3 "Burger"
   </p>
 </div>
 
