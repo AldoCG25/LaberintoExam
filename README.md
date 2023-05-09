@@ -9,4 +9,5 @@ Dentro de este mismo haremos la busqueda de la URL del paquete de GitHub (por lo
 Para el quinto paso abriremos una ventana y colocaremos el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo. 
 En la sexta etapa es colocar el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch' en una nueva ventana, este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y configura el entorno según las instrucciones en ese archivo.
   
-  Hola
+A continuación se explicará con mayor detalle el archivo examen2.py :
+  
