@@ -42,15 +42,15 @@ https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
 cd <catkin_ws>
 cd <src>
 ```
-9. Dentro de este mismo haremos la busqueda de la URL del paquete de GitHub (por lo general se encuentra en la pestaña "Code" del repositório), se ejecutará el siguiente comando 'git clone <URL>'
+6. Dentro de este mismo se hace la busqueda de la URL del paquete de GitHub (por lo general se encuentra en la pestaña "Code" del repositório), se ejecutará el siguiente comando 'git clone <URL>'
 ```sh
 git clone https://github.com/rfzeg/plywood_mazes.git
 ```
- 10. Abriremos una ventana y colocaremos el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo.
+ 7. Se abre una ventana en terminal y se ejecuta el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo.
 ```sh
 roslaunch plywood_mazes maze_3_6x6.launch
 ```
- 11. Etapa es colocar el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch' en una nueva ventana, este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y configura el entorno según las instrucciones en ese archivo.
+ 11. En otra ventana de terminal, se ejecuta el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch', este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y spawnea al robot el el laberinto de Gazebo.
  ```sh
 roslaunch plywood_mazes spawn_turtlebot3.launch
 ```
