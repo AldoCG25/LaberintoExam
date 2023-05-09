@@ -72,7 +72,7 @@ roslaunch plywood_mazes maze_3_6x6.launch
 roslaunch plywood_mazes spawn_turtlebot3.launch
 ```
 
-## Código Examen.py
+
 
 
 ## Video de implementación
@@ -87,12 +87,13 @@ roslaunch plywood_mazes spawn_turtlebot3.launch
   
 </div>
 <br />
-
+ 
+## Código Examen.py
 Explicacion del código 
 <a href="https://github.com/AldoCG25/LaberintoExam/blob/main/examen2.py">
 examen2.py
   </a>
-
+:
 Este código es un programa el cual el objetivo principal es que el robot “turtlebot3” tenga la capacidad de evadir objetos, esto lo realiza gracias a los tópicos que engloban los sensores laser y publica mensajes de movimiento en el topico “/cmd_vel”. Las primeras 4 líneas de este código, se encargan de importar los módulos necesarios de ROS para poder trabajar con el sensor lase asi como los mensajes de movimiento. 
  
 import rospy: Esta línea importa el módulo rospy, que es la biblioteca principal utilizada para interactuar con ROS a través de Python. Proporciona funciones y herramientas para crear, inicializar y ejecutar nodos ROS, publicar y suscribirse a mensajes, y muchas otras cosas que se utilizan en la programación de robots.
