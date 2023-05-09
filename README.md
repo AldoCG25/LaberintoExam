@@ -58,23 +58,6 @@ roslaunch plywood_mazes spawn_turtlebot3.launch
  ```sh
 rosrun plywood_mazes examen2.py
  ```
-
-
-
-
-## Video de implementación
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<h3 align="left">Solución al laberinto con robot turtlebot3 burger</h3>
-
-<div align="center">
-  
-[![Alt text](https://github.com/AldoCG25/LaberintoExam/blob/main/image.png)](https://youtu.be/EeLlrUJnqTU)
-  
-</div>
-<br />
- 
 ## Código Examen.py
 Explicacion del código 
 <a href="https://github.com/AldoCG25/LaberintoExam/blob/main/examen2.py">
@@ -99,6 +82,22 @@ En este caso, la implementación del programa para la evasión de obstáculos es
 Una vez terminadas las condiciones se publican los mensajes de movimiento los cuales son calculados por el tópico “/cmd_vel”, después tenemos la línea “move = Twist()” la cual crea un objeto de esta clase, que se utiliza para enviar comandos de movimiento al robot, la línea siguiente inicializa un nodo de ROS llamado "obstacle_avoidance_node" este comando es para indicar que el código que sigue está asociado con este nodo.
  
 Finalmente tenemos la variable “pub” la cual crea un objeto de publicación el cual envía comandos de movimiento al robot a través del tópico "/cmd_vel". El objeto "pub" publica mensajes del tipo Twist () en este y el argumento queue_size=10 indica que el tamaño máximo de la cola de mensajes es de 10. La variable “sub” crea un objeto de suscripción el cual recibe datos de los sensores láser del robot a través del topico "/scan". El objeto "sub" está configurado para llamar a la función callback cada vez que llega un nuevo mensaje. Tenemos la última línea de código “rospy.spin()” la cual inicia el bucle de eventos de ROS, este procesa los mensajes entrantes, llama a las funciones de suscripción y maneja las publicaciones salientes, esta línea nos indica que el programa se ejecutará continuamente hasta que se detenga manualmente o se produzca una excepción.
+
+
+
+## Video de implementación
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<h3 align="left">Solución al laberinto con robot turtlebot3 burger</h3>
+
+<div align="center">
+  
+[![Alt text](https://github.com/AldoCG25/LaberintoExam/blob/main/image.png)](https://youtu.be/EeLlrUJnqTU)
+  
+</div>
+<br />
+ 
 
 
 
