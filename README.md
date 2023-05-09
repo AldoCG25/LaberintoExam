@@ -1,16 +1,5 @@
 # LaberintoExam
-Pasos seguidos y video de resolución de examen para salir del laberinto Maze3 6x6 con Turtlebot 3
-NOTA: para llevar a cabo una buena realización de la practica se recomienda tener la versión de Ubuntu 20.04, ya sea en una Virtual Machine o haciendo una partición en el disco duro del dispositivo.
-Paso uno, crearemos un nuevo paquete de ROS en el espacio de trabajo de catkin llamado 'playwood_mazes'. Asegurandonos de incluir las independencias 'gazebo_ros' y 'turtlebot3_gazebo'.
-En el segundo paso crearemos un directorio llamado 'worlds' dentro del paquete 'plywood_mazes'.
-Continuamos con el tercer paso creando un directorio llamado 'launch' dentro del paquete 'plywood_mazes'.
-El cuarto paso consiste en la clonación de los paquetes de GitHub, utilizamos el comando 'cd' para cambiar al directorio donde se desea clonar el paquete.
-Dentro de este mismo haremos la busqueda de la URL del paquete de GitHub (por lo general se encuentra en la pestaña "Code" del repositório), se ejecutará el siguiente comando 'git clone <URL>'
-Para el quinto paso abriremos una ventana y colocaremos el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo. 
-En la sexta etapa es colocar el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch' en una nueva ventana, este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y configura el entorno según las instrucciones en ese archivo.
-  
-A continuación se explicará con mayor detalle el archivo examen2.py :
-  
+ 
 <div id="top"></div>
 <br />
 <div align="center">
@@ -158,27 +147,14 @@ Below is a screenshot of the execution of the statement with the termination .la
 <br />
 
 
-
-## Modifications to the original project
-The robotis project was taken as a basis for the teleoperation of the robot through the computer keyboard mentioned above.
-In the main file named "open_manipulator_teleop_keyboard.cpp" located in the /open_manipulator/open_manipulator_teleop/src/ folder, the instructions that commands the robot's movements were found, determined by a case in which each character or option sent the robot different positions of the joints.
-What was changed from the original project is this file, where the joint positions were changed to those that described the team's pick and place implementation.
-The description that is shown in the console when executing the launch program was also modified so that it sent the positions of the joints, the location of the grippper and a small description of the program along with the movement that it was executing.
-The program was also modified so that, instead of waiting for the to press any key on the keyboard, as the original program does, the characters were automatically set in the main program. 
-The change of these aspects resulted in the modification of the following functions:
-- `void OpenManipulatorTeleop::setGoal(char ch) `
-- `void OpenManipulatorTeleop::printText()`
-- `int main(int argc, char **argv)`
-
-## Contact
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-Authors:  <br />
-Josué Lara Ruiz - josue.lararz@udlap.mx
-  <br />
-Aldo Córdova Gonzalez - aldo.cordovagz@udlap.mx
-  <br />
-Sarah D. Vásquez - sarah.vasquezmo@udlap.mx
-
-Project Link: [github.com/JosueLara22/PicknPlace-for-Open_Manipulator](github.com/JosueLara22/PicknPlace-for-Open_Manipulator)
-## Enjoy, have fun and improve the program!
+Pasos seguidos y video de resolución de examen para salir del laberinto Maze3 6x6 con Turtlebot 3
+NOTA: para llevar a cabo una buena realización de la practica se recomienda tener la versión de Ubuntu 20.04, ya sea en una Virtual Machine o haciendo una partición en el disco duro del dispositivo.
+Paso uno, crearemos un nuevo paquete de ROS en el espacio de trabajo de catkin llamado 'playwood_mazes'. Asegurandonos de incluir las independencias 'gazebo_ros' y 'turtlebot3_gazebo'.
+En el segundo paso crearemos un directorio llamado 'worlds' dentro del paquete 'plywood_mazes'.
+Continuamos con el tercer paso creando un directorio llamado 'launch' dentro del paquete 'plywood_mazes'.
+El cuarto paso consiste en la clonación de los paquetes de GitHub, utilizamos el comando 'cd' para cambiar al directorio donde se desea clonar el paquete.
+Dentro de este mismo haremos la busqueda de la URL del paquete de GitHub (por lo general se encuentra en la pestaña "Code" del repositório), se ejecutará el siguiente comando 'git clone <URL>'
+Para el quinto paso abriremos una ventana y colocaremos el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo. 
+En la sexta etapa es colocar el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch' en una nueva ventana, este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y configura el entorno según las instrucciones en ese archivo.
+  
+A continuación se explicará con mayor detalle el archivo examen2.py :
