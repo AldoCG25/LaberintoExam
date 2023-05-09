@@ -1,9 +1,9 @@
-# LaberintoExam
+# Laberinto Examen Diseño de Sistemas Robóticos LRT4102 
  
 <div id="top"></div>
 <br />
 <div align="center">
-  <a href="[github.com/JosueLara22/PicknPlace-for-Open_Manipulator](https://github.com/AldoCG25/LaberintoExam.git)">
+  <a href="[ttps://github.com/AldoCG25/LaberintoExam.git]>
     <img src="https://github.com/AldoCG25/LaberintoExam/blob/main/6a26de0f-de71-4a06-a354-4c7c5ff3df2d.jpg" alt="Logo" width="700" height="400">
   </a>
 
