@@ -71,6 +71,10 @@ roslaunch plywood_mazes maze_3_6x6.launch
  ```sh
 roslaunch plywood_mazes spawn_turtlebot3.launch
 ```
+ 12. Ejecutar archivo .py creado para la solución del laberinto.
+ ```sh
+rosrun plywood_mazes examen2.py
+ ```
 
 
 
