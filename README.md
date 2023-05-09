@@ -19,40 +19,7 @@
 ## Sobre el examen
 This is a pick and place implementation for the Open Manipulator X robot using Ubutntu 20.04, ROS Noetic and the keyboard teleoperation tutorial as the foundation.
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">Sobre el examen</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#usage-and-implementation-video">Usage and Implementation Video</a>
-    </li>   
-    <li>
-      <a href="#modifications-to-the-original-project">Modifications to the original project</a>
-    </li>  
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ol>
-</details>
-
-## Getting Started
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-### Prerequisites
+### Requisitos
 For the implementation you will need Ubuntu 20.04 on your computer (not recommended on Virtual Box).
 ### Installation
 1. Install ROS Noetic: User must be admin to proceed
