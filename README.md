@@ -50,11 +50,11 @@ git clone https://github.com/rfzeg/plywood_mazes.git
 ```sh
 roslaunch plywood_mazes maze_3_6x6.launch
 ```
- 8. En otra ventana de terminal, se ejecuta el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch', este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y spawnea al robot el el laberinto de Gazebo.
+ 8. En otra ventana de terminal, se ejecuta el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch', este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y spawnea al robot en el laberinto de Gazebo.
  ```sh
 roslaunch plywood_mazes spawn_turtlebot3.launch
 ```
- 9. Por último, en una nueva ventan de teminal ejecutar archivo .py creado para la solución del laberinto.
+ 9. Por último, en una nueva ventana de teminal ejecutar archivo .py creado para la solución del laberinto.
  ```sh
 rosrun plywood_mazes examen2.py
  ```
