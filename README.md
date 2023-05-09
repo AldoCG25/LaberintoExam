@@ -18,13 +18,10 @@ A continuación se explicará con mayor detalle el archivo examen2.py :
     <img src="https://user-images.githubusercontent.com/105239023/167539919-e10fc684-272a-4aec-9d63-01f13786bb8c.png" alt="Logo" width="200" height="200">
   </a>
 
-<h3 align="center">PicknPlace-for-Open_Manipulator</h3>
+<h3 align="center">Laberinto Examen</h3>
 
   <p align="center">
     Pick and place implementation for the Open Manipulator X robot
-    <br />
-    <a href="https://github.com/JosueLara22/PicknPlace-for-Open_Manipulator"><strong>Explore the docs »</strong></a>
-    <br />
   </p>
 </div>
 
