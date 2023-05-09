@@ -100,7 +100,7 @@ Below is a screenshot of the execution of the statement with the termination .la
 
 <div align="center">
   
-[![Alt text](https://youtu.be/EeLlrUJnqTU)](https://www.youtube.com/watch?v=eiSbc5Rm95E)
+[![Alt text](https://github.com/AldoCG25/LaberintoExam/blob/main/image.png)](https://youtu.be/EeLlrUJnqTU)
   
 </div>
 <br />
