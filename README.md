@@ -15,8 +15,8 @@
 </div>
 
 
-
-## Sobre el examen
+## Desarrollo
+### Sobre el examen
 En este proyecto, se utilizará el Turtlebot3 Burger para resolver un laberinto del repositorio https://github.com/rfzeg/plywood_mazes.git. Para lograr este objetivo, se desarrolló un código que permite guiar al robot hacia un punto específico en el mapa, en este caso, para resolver el laberinto y que el robot termine en la esquina superior derecha del mapa Maze 3.
 
 ### Requisitos
