@@ -14,7 +14,7 @@ A continuación se explicará con mayor detalle el archivo examen2.py :
 <div id="top"></div>
 <br />
 <div align="center">
-  <a href="github.com/JosueLara22/PicknPlace-for-Open_Manipulator">
+  <a href="[github.com/JosueLara22/PicknPlace-for-Open_Manipulator](https://github.com/AldoCG25/LaberintoExam.git)">
     <img src="https://github.com/AldoCG25/LaberintoExam/blob/main/IMG-1384.jpg" alt="Logo" width="200" height="200">
   </a>
 
