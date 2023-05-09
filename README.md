@@ -17,11 +17,11 @@
 
 
 ## Sobre el examen
-This is a pick and place implementation for the Open Manipulator X robot using Ubutntu 20.04, ROS Noetic and the keyboard teleoperation tutorial as the foundation.
+En este proyecto, se utilizará el Turtlebot3 Burger para resolver un laberinto previamente almacenado en el repositorio de donde se obtuvo el mapa. Para lograr este objetivo, se ha desarrollado un código que permite guiar al robot hacia un punto específico en el mapa.
 
 ### Requisitos
-For the implementation you will need Ubuntu 20.04 on your computer (not recommended on Virtual Box).
-### Installation
+Para llevar a cabo la práctica de manera efectiva, se recomienda contar con la versión de Ubuntu 20.04 instalada en una máquina virtual o en una partición del disco duro de su dispositivo. Esto permitirá una mayor estabilidad y compatibilidad con las herramientas utilizadas durante la práctica.
+### Instalación
 1. Install ROS Noetic: User must be admin to proceed
 2. Install Github
 ```sh 
@@ -91,12 +91,14 @@ Below is a screenshot of the execution of the statement with the termination .la
   </a>
 </div>
 <br />
+## Código Examen.py
 
-## Usage and Implementation Video
+
+## Video de implementación
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<h3 align="left">Pick and Place for Open ManipulatorX YOUTUBE Video</h3>
+<h3 align="left">Solución al laberinto con robot turtlebot3 burger</h3>
 
 <div align="center">
   
@@ -106,14 +108,5 @@ Below is a screenshot of the execution of the statement with the termination .la
 <br />
 
 
-Pasos seguidos y video de resolución de examen para salir del laberinto Maze3 6x6 con Turtlebot 3
-NOTA: para llevar a cabo una buena realización de la practica se recomienda tener la versión de Ubuntu 20.04, ya sea en una Virtual Machine o haciendo una partición en el disco duro del dispositivo.
-Paso uno, crearemos un nuevo paquete de ROS en el espacio de trabajo de catkin llamado 'playwood_mazes'. Asegurandonos de incluir las independencias 'gazebo_ros' y 'turtlebot3_gazebo'.
-En el segundo paso crearemos un directorio llamado 'worlds' dentro del paquete 'plywood_mazes'.
-Continuamos con el tercer paso creando un directorio llamado 'launch' dentro del paquete 'plywood_mazes'.
-El cuarto paso consiste en la clonación de los paquetes de GitHub, utilizamos el comando 'cd' para cambiar al directorio donde se desea clonar el paquete.
-Dentro de este mismo haremos la busqueda de la URL del paquete de GitHub (por lo general se encuentra en la pestaña "Code" del repositório), se ejecutará el siguiente comando 'git clone <URL>'
-Para el quinto paso abriremos una ventana y colocaremos el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo. 
-En la sexta etapa es colocar el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch' en una nueva ventana, este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y configura el entorno según las instrucciones en ese archivo.
   
-A continuación se explicará con mayor detalle el archivo examen2.py :
+
