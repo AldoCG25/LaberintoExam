@@ -16,23 +16,17 @@
 
 
 
-## About The Project
+## Sobre el examen
 This is a pick and place implementation for the Open Manipulator X robot using Ubutntu 20.04, ROS Noetic and the keyboard teleoperation tutorial as the foundation.
-### Built With
-* The base of the project is found in the Open Manipulator X teleoperation tutorial. 
-* Link for the original project https://emanual.robotis.com/docs/en/platform/openmanipulator_x/quick_start_guide/
-* The repository of the original project link 
-https://github.com/ROBOTIS-GIT/open_manipulator/tree/master/open_manipulator_teleop
-* Wiki ros tutorials available at http://wiki.ros.org/ROS/Tutorials
 
-Project for the Kinematics and Dynamics of Robots course at the Universidad de las Americas Puebla
+Diseño de Sistemas Robóticos
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Sobre el examen</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
