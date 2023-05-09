@@ -97,11 +97,11 @@ examen2.py
  
 Este código es un programa el cual el objetivo principal es que el robot “turtlebot3” tenga la capacidad de evadir objetos, esto lo realiza gracias a los tópicos que engloban los sensores laser y publica mensajes de movimiento en el topico “/cmd_vel”. Las primeras 4 líneas de este código, se encargan de importar los módulos necesarios de ROS para poder trabajar con el sensor lase asi como los mensajes de movimiento. 
  
-import rospy: Esta línea importa el módulo rospy, que es la biblioteca principal utilizada para interactuar con ROS a través de Python. Proporciona funciones y herramientas para crear, inicializar y ejecutar nodos ROS, publicar y suscribirse a mensajes, las cuales son las principales que se utilizan en la programación de robots.
+-import rospy: Esta línea importa el módulo rospy, que es la biblioteca principal utilizada para interactuar con ROS a través de Python. Proporciona funciones y herramientas para crear, inicializar y ejecutar nodos ROS, publicar y suscribirse a mensajes, las cuales son las principales que se utilizan en la programación de robots.
  
-from sensor_msgs.msg import LaserScan: Esta línea importa el mensaje LaserScan del paquete sensor_msgs. En este caso, LaserScan es un mensaje que contiene datos de un escáner láser, que se utlizó para la detección y mapeo de objetos en el mundo escogido.
+-from sensor_msgs.msg import LaserScan: Esta línea importa el mensaje LaserScan del paquete sensor_msgs. En este caso, LaserScan es un mensaje que contiene datos de un escáner láser, que se utlizó para la detección y mapeo de objetos en el mundo escogido.
  
-from geometry_msgs.msg import Twist: Esta línea importa el mensaje Twist del paquete geometry_msgs. Twist es un mensaje que describe la velocidad y la dirección de un movimiento en un espacio tridimensional. Este mensaje se utilizó para controlar el movimiento de del robot, proporcionando una forma de enviar comandos de movimiento desde un nodo ROS a los motores del robot.
+-from geometry_msgs.msg import Twist: Esta línea importa el mensaje Twist del paquete geometry_msgs. Twist es un mensaje que describe la velocidad y la dirección de un movimiento en un espacio tridimensional. Este mensaje se utilizó para controlar el movimiento de del robot, proporcionando una forma de enviar comandos de movimiento desde un nodo ROS a los motores del robot.
  
 A continuación, se define una función de devolución de llamada “callback”, esta se ejecuta cada vez que se reciba un mensaje del láser. Dentro de la función “callback” se imprimen las distancias de los tres ángulos a utilizar (0, 90 y 270), en las líneas 10-15 se establecen los diferentes umbrales para detectar la distancia de los objetos, cada uno de ellos se utilizó en secciones posteriores, esto para calcular y conocer la distancia en diferentes direcciones.
  
