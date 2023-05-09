@@ -22,39 +22,39 @@ En este proyecto, se utilizará el Turtlebot3 Burger para resolver un laberinto 
 ### Requisitos
 Para llevar a cabo el proyecto de manera efectiva, se recomienda contar con la versión de Ubuntu 20.04 instalada en una máquina virtual o en una partición del disco duro de su dispositivo. Esto permitirá una mayor estabilidad y compatibilidad con las herramientas utilizadas durante el proyecto.
 ### Instalación
-1. Instalar ROS Noetic en modo administrador
-2. Instalar Github
+
+1. Instalar Github
 ```sh 
  sudo apt-get install git-all
 ```
-3. Instalar ROS Noetic (Copiar los comandos en Terminal)
+2. Instalar ROS Noetic (Copiar los comandos en Terminal)
 ```sh 
 sudo apt update 
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh
 chmod 755 ./install_ros_noetic.sh
 bash ./install_ros_noetic.sh
 ```  
-4. Instalar controladores y paquetes del turtlebot3 como se describe en el siguiente repositorio:
+3. Instalar controladores y paquetes del turtlebot3 como se describe en el siguiente repositorio:
 https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
 
-5. Clonar los paquetes de GitHub en donde se encuntran los laberintos, el comando 'cd' para se utiliza para cambiar al directorio donde se desea clonar el paquete.
+4. Clonar los paquetes de GitHub en donde se encuntran los laberintos, el comando 'cd' para se utiliza para cambiar al directorio donde se desea clonar el paquete.
 ```sh
 cd <catkin_ws>
 cd <src>
 ```
-6. Dentro de la dirección src se clona el Github con el URL del paquete (por lo general se encuentra en la pestaña "Code" del repositorio), para ello, se ejecuta el comando 'git clone <URL>'
+5. Dentro de la dirección src se clona el Github con el URL del paquete (por lo general se encuentra en la pestaña "Code" del repositorio), para ello, se ejecuta el comando 'git clone <URL>'
 ```sh
 git clone https://github.com/rfzeg/plywood_mazes.git
 ```
- 7. Se abre una ventana en terminal y se ejecuta el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo.
+6. Se abre una ventana en terminal y se ejecuta el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo.
 ```sh
 roslaunch plywood_mazes maze_3_6x6.launch
 ```
- 8. En otra ventana de terminal, se ejecuta el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch', este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y spawnea al robot en el laberinto de Gazebo.
+7. En otra ventana de terminal, se ejecuta el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch', este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y spawnea al robot en el laberinto de Gazebo.
  ```sh
 roslaunch plywood_mazes spawn_turtlebot3.launch
 ```
- 9. Por último, en una nueva ventana de teminal ejecutar archivo .py creado para la solución del laberinto.
+8. Por último, en una nueva ventana de teminal ejecutar archivo .py creado para la solución del laberinto.
  ```sh
 rosrun plywood_mazes examen2.py
  ```
@@ -63,7 +63,7 @@ Explicacion del código
 <a href="https://github.com/AldoCG25/LaberintoExam/blob/main/examen2.py">
 examen2.py
   </a>
-:
+
  
 Este código es un programa el cual el objetivo principal es que el robot “turtlebot3” tenga la capacidad de evadir objetos, esto lo realiza gracias a los tópicos que engloban los sensores laser y publica mensajes de movimiento en el topico “/cmd_vel”. Las primeras 4 líneas de este código, se encargan de importar los módulos necesarios de ROS para poder trabajar con el sensor lase asi como los mensajes de movimiento. 
  
