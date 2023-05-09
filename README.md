@@ -37,7 +37,6 @@ bash ./install_ros_noetic.sh
 4. Instalar controladores y paquetes del turtlebot3 como se describe en el siguiente repositorio:
 https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
 
-```
 5. Clonar los paquetes de GitHub, utilizamos el comando 'cd' para cambiar al directorio donde se desea clonar el paquete.
 ```sh
 cd <catkin_ws>
