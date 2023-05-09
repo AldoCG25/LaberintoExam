@@ -61,13 +61,13 @@ cd <directorio_deseado>
 ```
 9. Dentro de este mismo haremos la busqueda de la URL del paquete de GitHub (por lo general se encuentra en la pestaña "Code" del repositório), se ejecutará el siguiente comando 'git clone <URL>'
 ```sh
-git clone <URL>
+git clone https://github.com/rfzeg/plywood_mazes.git
 ```
- 10. Para el quinto paso abriremos una ventana y colocaremos el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo.
+ 10. Abriremos una ventana y colocaremos el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo.
 ```sh
 roslaunch plywood_mazes maze_3_6x6.launch
 ```
- 11. En la sexta etapa es colocar el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch' en una nueva ventana, este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y configura el entorno según las instrucciones en ese archivo.
+ 11. Etapa es colocar el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch' en una nueva ventana, este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y configura el entorno según las instrucciones en ese archivo.
  ```sh
 roslaunch plywood_mazes spawn_turtlebot3.launch
 ```
@@ -105,7 +105,7 @@ Este código es un programa el cual el objetivo principal es que el robot “tur
  
 A continuación, se define una función de devolución de llamada “callback”, esta se ejecuta cada vez que se reciba un mensaje del láser. Dentro de la función “callback” se imprimen las distancias de los tres ángulos a utilizar (0, 90 y 270), en las líneas 10-15 se establecen los diferentes umbrales para detectar la distancia de los objetos, cada uno de ellos se utilizó en secciones posteriores, esto para calcular y conocer la distancia en diferentes direcciones.
  
-Para configurar los ángulos de los cuales queremos obtener las distancias, en las líneas 19-21 se crearon tres variables las cuales se encargan de las distancias actuales del sensor, a la derecha, al frente y a la izquierda respectivamente. Una vez establecidas todas las variables y herramientas a utilizar para la navegación del robot en el mundo en Gazebo, se declaró una serie de condiciones “if-else” las cuales determinan el comportamiento del robot dentro del mapa, en función de los umbrales y las distancias de los obstáculos. 
+Para configurar los ángulos de los cuales queremos obtener las distancias, en las líneas 19-21 se crearon tres variables (umbral) las cuales permiten compar distancias actuales del sensor, a la derecha, al frente y a la izquierda respectivamente. Una vez establecidas todas las variables y herramientas a utilizar para la navegación del robot en el mundo en Gazebo, se declaró una serie de condiciones “if-else” las cuales determinan el comportamiento del robot dentro del mapa, en función de los umbrales y las distancias de los obstáculos. 
  
 En este caso, la implementación del programa para la evasión de obstáculos es relativamente simple, ya que, el robot avanza siempre y cuando no detecte algún objeto en el frente dentro del umbral establecido, el siguiente grupo de condiciones se encargan de girar hacia la derecha o hacia la izquierda dependiendo en que ángulo detecte obstáculos, es decir, si detecta obstáculos del lado derecho gira hacia la izquierda y viceversa. Finalmente, tenemos una condición doble, la cual se encarga de parar el robot una vez que se encuentre en el punto requerido.
  
