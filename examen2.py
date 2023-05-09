@@ -21,39 +21,6 @@ def callback(dt):
     left_distance = dt.ranges[270] # Distance to the left
 
 
-    #if front_distance > thr1 and right_distance < thr2: # If there's space in front and a wall to the right
-     #   move.linear.x = 0.8
-      #  move.angular.z = 0.0
-    #elif front_distance < thr1: # If there's an obstacle in front
-     #   move.linear.x = 0.0
-      #  move.angular.z = 0.5 # Turn left
-    #elif right_distance > thr2: # If there's no wall to the right
-     #   move.linear.x = 0.0
-      #  move.angular.z = -0.5 # Turn right
-    #elif front_distance > thr1 and right_distance > thr2: # If there's no obstacle in front and no wall to the right (Exit found)
-     #   move.linear.x = 0.8
-      #  move.angular.z = 0.0
-       # rospy.loginfo("Exit found!")
-    #else: # In any other case
-     #   move.linear.x = 0.8
-      #  move.angular.z = 0.0
-
-   
-    #if front_distance > thr1 : # If there's an obstacle in front
-      #  move.linear.x = 0.2
-     #   move.angular.z = 0.0 # Turn left
-    #elif front_distance < thr1 and left_distance < thr2: # If there's space in front and a wall to the right
-      #  move.linear.x = 0.0
-     #   move.angular.z = -0.7
-    #elif front_distance < thr1 and right_distance < thr2: # If there's no wall to the right
-      #  move.linear.x = 0.0
-     #   move.angular.z = 0.6 # Turn right
-    #elif front_distance <= thr3 and left_distance <= thr3 and right_distance <= thr3 :#and left_distance < thr2:
-     #   move.linear.x = 0.0
-      #  rospy.loginfo("Exit Found")
-        #rospy.sleep(10)
-
-
     if front_distance > thr1 : # If there's an obstacle in front
         move.linear.x = 0.2
         move.angular.z = 0.0 # Turn left
@@ -74,8 +41,6 @@ def callback(dt):
         move.angular.z = 0.0
         rospy.loginfo("Accomplished!")
         rospy.sleep(100000000)
-
- 
 
     pub.publish(move)
 
