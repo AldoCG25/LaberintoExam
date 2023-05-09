@@ -34,63 +34,44 @@ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_
 chmod 755 ./install_ros_noetic.sh
 bash ./install_ros_noetic.sh
 ```  
-4. Install controllers and pakages
+4. Instalar controladores y paquetes.
 ```sh
 source ~/.bashrc	 
 sudo apt-get install ros-noetic-ros-controllers ros-noetic-gazebo* ros-noetic-moveit* ros-noetic-industrial-core	 
 sudo apt install ros-noetic-dynamixel-sdk ros-noetic-dynamixel-workbench*
 sudo apt install ros-noetic-robotis-manipulator
 ```
-5. Install Open Manipulator Pakages
+5. Crearemos un nuevo paquete de ROS en el espacio de trabajo de catkin llamado 'playwood_mazes'. Asegurandonos de incluir las independencias 'gazebo_ros' y 'turtlebot3_gazebo'.
 ```sh
-cd ~/catkin_ws/src/
-git clone -b noetic-devel https://github.com/ROBOTIS-GIT/open_manipulator.git
-git clone -b noetic-devel https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
-git clone -b noetic-devel https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
-git clone https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
+cd ~/catkin_ws/src
+catkin_create_pkg plywood_mazes gazebo_ros turtlebot3_gazebo
 ```
-6. Remove original file	and replace it with PicknPlace program
+6. Crearemos un directorio llamado 'worlds' dentro del paquete 'plywood_mazes'.
 ```sh
-cd ~/catkin_ws/src/open_manipulator/open_manipulator_teleop/src/
-rm open_manipulator_teleop_keyboard.cpp
-git clone https://github.com/JosueLara22/PicknPlace-for-Open_Manipulator.git
-cd PicknPlace-for-Open_Manipulator/open_manipulator_teleop/src/
-mv open_manipulator_teleop_keyboard.cpp ~/catkin_ws/src/open_manipulator/open_manipulator_teleop/src/
-cd ~/catkin_ws/src/open_manipulator/open_manipulator_teleop/src/
-rm -rf PicknPlace-for-Open_Manipulator	
-cd ~/catkin_ws && catkin_make
-clear
+cd ~/catkin_ws/src/plywood_mazes
+mkdir worlds
 ```
-7. Run communication with Robot
+7. Continuamos con el tercer paso creando un directorio llamado 'launch' dentro del paquete 'plywood_mazes'.
 ```sh
-roslaunch open_manipulator_controller open_manipulator_controller.launch usb_port:=/dev/ttyACM0 baud_rate:=1000000
+mkdir launch
 ```
-When the communication launch command has correctly run, an overview of the parameters and nodes that are recognized by ROS is displayed. The Dynamixel motors are listed with their corresponding ID and model, as well as showing that the communication was successfully initiated.
-Below is a screenshot of the communication instruction execution and displayed summary.
+8. Consiste en la clonación de los paquetes de GitHub, utilizamos el comando 'cd' para cambiar al directorio donde se desea clonar el paquete.
+```sh
+cd <directorio_deseado>
+```
+9. Dentro de este mismo haremos la busqueda de la URL del paquete de GitHub (por lo general se encuentra en la pestaña "Code" del repositório), se ejecutará el siguiente comando 'git clone <URL>'
+```sh
+git clone <URL>
+```
+ 10. Para el quinto paso abriremos una ventana y colocaremos el siguiente comando 'roslaunch plywood_mazes maze_3_6x6.launch', este lanza todos los nodos especificados en el archivo maze_3_6x6.launch y configura el entorno según las instrucciones en ese archivo.
+```sh
+roslaunch plywood_mazes maze_3_6x6.launch
+```
+ 11. En la sexta etapa es colocar el siguiente comando 'roslaunch plywood_mazes spawn_turtlebot3.launch' en una nueva ventana, este lanza todos los nodos especificados en el archivo spawn_turtlebot3.launch y configura el entorno según las instrucciones en ese archivo.
+ ```sh
+roslaunch plywood_mazes spawn_turtlebot3.launch
+```
 
-   <br />
-<div align="center">
-  <a href="github.com/JosueLara22/PicknPlace-for-Open_Manipulator">
-<img src="Images/comunicacionexitosaconrobot.png" alt="Captura1" width="900" height="600">
-  </a>
-</div>
-<br />
-
-8. Run file Pick and Place (in new Tab)
-```sh
-roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch
-```
-When executing the launch program, an overview of parameters and nodes is displayed in a similar way as in the communication instruction.
-Subsequently, a short description of what instruction the robot is doing from Pick and Place program, the angles of each joint and the position of the end effector is shown. Being 1-8 displacement moves, g the gripper opening and f the gripper closing.
-Below is a screenshot of the execution of the statement with the termination .launch.
-
-  <br />
-<div align="center">
-  <a href="github.com/JosueLara22/PicknPlace-for-Open_Manipulator">
-<img src="Images/programapicknplacecorriendoexitosamente.png" alt="Captura2" width="900" height="600">
-  </a>
-</div>
-<br />
 ## Código Examen.py
 
 
