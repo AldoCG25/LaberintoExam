@@ -34,13 +34,9 @@ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_
 chmod 755 ./install_ros_noetic.sh
 bash ./install_ros_noetic.sh
 ```  
-4. Instalar controladores y paquetes.
-```sh
-source ~/.bashrc	 
-sudo apt-get install ros-noetic-ros-controllers ros-noetic-gazebo* ros-noetic-moveit* ros-noetic-industrial-core	 
-sudo apt install ros-noetic-dynamixel-sdk ros-noetic-dynamixel-workbench*
-sudo apt install ros-noetic-robotis-manipulator
-```
+4. Instalar controladores y paquetes del turtlebot3 como se describe en el siguiente repositorio:
+https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
+
 5. Crearemos un nuevo paquete de ROS en el espacio de trabajo de catkin llamado 'playwood_mazes'. Asegurandonos de incluir las independencias 'gazebo_ros' y 'turtlebot3_gazebo'.
 ```sh
 cd ~/catkin_ws/src
