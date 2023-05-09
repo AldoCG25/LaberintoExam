@@ -22,8 +22,8 @@ En este proyecto, se utilizará el Turtlebot3 Burger para resolver un laberinto 
 ### Requisitos
 Para llevar a cabo el proyecto de manera efectiva, se recomienda contar con la versión de Ubuntu 20.04 instalada en una máquina virtual o en una partición del disco duro de su dispositivo. Esto permitirá una mayor estabilidad y compatibilidad con las herramientas utilizadas durante el proyecto.
 ### Instalación
-1. Install ROS Noetic: User must be admin to proceed
-2. Install Github
+1. Instalar ROS Noetic en modo administrador
+2. Instalar Github
 ```sh 
  sudo apt-get install git-all
 ```
