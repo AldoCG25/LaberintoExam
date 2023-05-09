@@ -88,7 +88,9 @@ roslaunch plywood_mazes spawn_turtlebot3.launch
 </div>
 <br />
 
+Explicacion del código 
 <a href="https://github.com/AldoCG25/LaberintoExam/blob/main/examen2.py">
+examen2.py
   </a>
 
 Este código es un programa el cual el objetivo principal es que el robot “turtlebot3” tenga la capacidad de evadir objetos, esto lo realiza gracias a los tópicos que engloban los sensores laser y publica mensajes de movimiento en el topico “/cmd_vel”. Las primeras 4 líneas de este código, se encargan de importar los módulos necesarios de ROS para poder trabajar con el sensor lase asi como los mensajes de movimiento. 
