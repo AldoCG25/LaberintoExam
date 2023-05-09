@@ -27,7 +27,7 @@ Para llevar a cabo el proyecto de manera efectiva, se recomienda contar con la v
 ```sh 
  sudo apt-get install git-all
 ```
-3. Install ROS Noetic tools (Copy all these instructions on terminal)
+3. Instalar ROS Noetic (Copiar los comandos en Terminal)
 ```sh 
 sudo apt update 
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh
