@@ -37,23 +37,11 @@ bash ./install_ros_noetic.sh
 4. Instalar controladores y paquetes del turtlebot3 como se describe en el siguiente repositorio:
 https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
 
-5. Crearemos un nuevo paquete de ROS en el espacio de trabajo de catkin llamado 'playwood_mazes'. Asegurandonos de incluir las independencias 'gazebo_ros' y 'turtlebot3_gazebo'.
-```sh
-cd ~/catkin_ws/src
-catkin_create_pkg plywood_mazes gazebo_ros turtlebot3_gazebo
 ```
-6. Crearemos un directorio llamado 'worlds' dentro del paquete 'plywood_mazes'.
+5. Clonar los paquetes de GitHub, utilizamos el comando 'cd' para cambiar al directorio donde se desea clonar el paquete.
 ```sh
-cd ~/catkin_ws/src/plywood_mazes
-mkdir worlds
-```
-7. Continuamos con el tercer paso creando un directorio llamado 'launch' dentro del paquete 'plywood_mazes'.
-```sh
-mkdir launch
-```
-8. Consiste en la clonación de los paquetes de GitHub, utilizamos el comando 'cd' para cambiar al directorio donde se desea clonar el paquete.
-```sh
-cd <directorio_deseado>
+cd <catkin_ws>
+cd <src>
 ```
 9. Dentro de este mismo haremos la busqueda de la URL del paquete de GitHub (por lo general se encuentra en la pestaña "Code" del repositório), se ejecutará el siguiente comando 'git clone <URL>'
 ```sh
